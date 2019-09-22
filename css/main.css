@@ -81,27 +81,30 @@ p{
 
 /* Social links*/
 .social-links{
- /* Modificando distancia de social links*/
-    box-sizing: border-box;
-    list-style: none;
-    padding: 1em;
-    margin-top: 3em;
-    padding-bottom: 7em;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    border-top: 10em;
+/* posicionando Social links en medio*/
+position: relative;
+ list-style: none;
+ margin-bottom: -5em;
+bottom: 70px;
+ display: flex;
+ flex-direction: row;
+ justify-content: center
 }
 
 .social-links li a{
+/* Modificando tamanio de social links*/
+    padding: 0px 20px;
     color: #D7DEE6;
     text-decoration: none;
-    font-size: 2.5em;
+    font-size: 12em;
 }
+
 
 
 .green-area {
     background-color: #0AC693; 
+    padding-left: 3em;
+    padding-right: 3em;
 }
 
 
@@ -157,10 +160,13 @@ p{
     line-height: 25px;
 }
 
+
 /* About */
 
 .about{
     margin-top: 2em;
+    padding-left: 3em;
+    padding-right: 3em;
 }
 
 .about h2 {
@@ -187,6 +193,7 @@ p{
     flex-direction: column;
     text-align: left;
     padding: 0px 1em;
+    font-weight: bold;
 }
 
 .contact * + * {
@@ -235,7 +242,10 @@ footer{
 }
 
 footer .social-links {
-    margin: 0;
+    /*Ajustando tamanio del footer .social-links */
+    box-sizing: content-box;
+    height: 5em;
+    margin: 5em 0 1em 0;
 }
 
 .menu {
@@ -305,29 +315,127 @@ footer .social-links {
         display: flex;
         margin-top: 1em;
     }
+    .show-desktop a:hover{
+        background-color: red;
+
+    }
+    .big-hero .hide-mobile{
+        
+       visibility: hidden;
+
+}
+.social-links{
+    /* reduciendo tamanio de espacio*/
+    position: relative;
+     list-style: none;
+     margin-bottom: -4em;
+    bottom: 70px;
+     display: flex;
+     flex-direction: row;
+     justify-content: center
+    }
 
 
-
-
-    /*TODO: FALTA CSS */
+    
 }
 
 @media only screen and (min-width: 1024px) {
 
-       /*TODO: FALTA CSS */
+        /*TODO: FALTA CSS */
+    .container {
+        
+        width: 80%;
+        margin: 0 auto;
+        max-width: 1440px;
+    }
+/*Agregando hover a menu de inicio*/
+    .show-desktop a:hover{
+        background-color: red;
+
+    }
+/*Arreglando detalle de la flechita*/
+    .big-hero .hide-mobile{
+        box-sizing: content-box;
+        height: 90px;
+        position: relative;
+        bottom: 140px;
+        font-size: 9em;
+        color: #0AC693;
 
 
 
 }
+.social-links{
+    /* reduciendo tamanio de espacio*/
+    position: relative;
+     list-style: none;
+     margin-bottom: -10em;
+    bottom: 70px;
+     display: flex;
+     flex-direction: row;
+     justify-content: center
+    }
 
 @media only screen and (min-width: 1440px) {
 
     /*TODO: FALTA CSS */
     .container {
+        
         width: 80%;
         margin: 0 auto;
         max-width: 1440px;
     }
+/*Agregando hover a menu de inicio*/
+    .show-desktop a:hover{
+        background-color: red;
+
+    }
+/*Arreglando detalle de la flechita*/
+    .big-hero .hide-mobile{
+        box-sizing: content-box;
+        height: 90px;
+        position: relative;
+        bottom: 140px;
+        font-size: 10em;
+        color: #0AC693;
+          
+    }
+    .social-links{
+        /* posicionando Social links en medio*/
+        position: relative;
+         list-style: none;
+         margin-bottom: 1em;
+         margin-top: -5em;
+        bottom: 70px;
+         display: flex;
+         flex-direction: row;
+         justify-content: center
+        }
+
+        .social-links li a{
+/* Modificando tamanio de social links*/
+    padding: 0px 20px;
+    
+    color: #D7DEE6;
+    text-decoration: none;
+    font-size: 12em;
+}
+
+footer .social-links{
+    box-sizing: border-box;
+    margin-bottom: 5em;
+    margin-top: 1em;
+    padding-top: -10em;
+
+}
+
+
+    
+  
     
     
+
+
+
+
 }
